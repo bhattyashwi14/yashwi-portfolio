@@ -76,10 +76,10 @@ export default function App() {
   const skills = [
     { name: 'Languages', vals: ['Java', 'Python', 'JavaScript'] },
     { name: 'Backend', vals: ['Django', 'Node.js', 'Express.js', 'REST APIs'] },
-    { name: 'Frontend', vals: ['React.js', 'HTML5', 'CSS3', 'Tailwind'] },
+    { name: 'Frontend', vals: ['React.js', 'HTML5', 'CSS3', 'Tailwind','Boostrap'] },
+    { name: 'Data Analysis & ML', vals: ['Pandas','NumPy','Scikit-learn','TensorFlow','Seaborn','Plotly','BeautifulSoup','Matplotlib']},
     { name: 'Databases', vals: ['MySQL', 'MongoDB', 'SQLite', 'JDBC'] },
     { name: 'Concepts', vals: ['OOP', 'DSA', 'SDLC', 'Agile', 'DBMS'] },
-    { name: 'Learning', vals: ['Machine Learning', 'Data Science', 'TensorFlow'] }
   ];
 
   const journeyItems = [
@@ -481,7 +481,7 @@ export default function App() {
 
         {/* CONTACT */}
         <section className="section" id="contact">
-          <div className="section-eyebrow">Let's talk</div>
+          <div className="section-eyebrow">Let's Connect</div>
           <h2>Looking to contribute, learn,<br />and grow through meaningful internship opportunities.</h2>
           <div className="contact-text">
             I'm not going to pretend I know everything. But I <strong>learn fast, take things seriously, and do the work.</strong> Even when it's hard, even when I'm scared I'll get it wrong. If that's the kind of energy your team needs, I'd love to talk.
