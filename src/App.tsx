@@ -1,4 +1,4 @@
-
+import { useEffect, useState } from 'react';
 
 export default function App() {
   const [expandedProject, setExpandedProject] = useState<string | null>(null);
