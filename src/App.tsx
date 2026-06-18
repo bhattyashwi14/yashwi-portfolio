@@ -85,7 +85,7 @@ export default function App() {
   const journeyItems = [
     {
       year: 'Hackathons',
-      title: 'Hackovate · Bit & Build (Google DSC) · LDCE Online Round Qualified',
+      title: 'Hackovate · Bit & Build (Google DSC) · LDCE Online Round Qualified . Odoo Online Round Qualified',
       desc: 'Three hackathons across two years. Each one a different kind of pressure and each one left me better at shipping under constraints, making decisions with incomplete information, and not giving up when things break at 2am.'
     },
     {
@@ -375,7 +375,7 @@ export default function App() {
               <div className="num-label">GitHub</div>
             </div>
             <div className="num-cell">
-              <div className="num-big">3</div>
+              <div className="num-big">5</div>
               <div className="num-label">Hackathons</div>
             </div>
           </div>
