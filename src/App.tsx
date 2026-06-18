@@ -95,7 +95,7 @@ export default function App() {
     },
     {
       year: 'DSA Grind',
-      title: '60+ LeetCode problems' ,
+      title: '70+ LeetCode problems' ,
       desc: "Not a flashy number. But I show up. Even when the college exams hit and the streak breaks, I come back. That's the part I'm most consistent about."
     },
     {
@@ -367,11 +367,11 @@ export default function App() {
               <div className="num-label">Sem 3 CGPA</div>
             </div>
             <div className="num-cell">
-              <div className="num-big">60+</div>
+              <div className="num-big">70+</div>
               <div className="num-label">LeetCode</div>
             </div>
             <div className="num-cell">
-              <div className="num-big">500+</div>
+              <div className="num-big">600+</div>
               <div className="num-label">GitHub</div>
             </div>
             <div className="num-cell">
