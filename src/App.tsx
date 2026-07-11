@@ -348,7 +348,7 @@ export default function App() {
           </div>
           <div className="hero-cta">
             <a href="#work" className="btn btn-fill">See my work</a>
-            <a href="mailto:bhattyashwi@gmail.com" className="btn btn-line">Get in touch</a>
+            <a href="#contact" className="btn btn-line">Get in touch</a>
           </div>
         </section>
 
