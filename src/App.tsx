@@ -77,7 +77,7 @@ export default function App() {
     { name: 'Languages', vals: ['Java', 'Python', 'JavaScript'] },
     { name: 'Backend', vals: ['Django', 'Node.js', 'Express.js', 'REST APIs'] },
     { name: 'Frontend', vals: ['React.js', 'HTML5', 'CSS3', 'Tailwind','Boostrap'] },
-    { name: 'Data Analysis & ML', vals: ['Pandas','NumPy','Scikit-learn','TensorFlow','Seaborn','Plotly','BeautifulSoup','Matplotlib']},
+    { name: 'Data Analysis & ML', vals: ['Pandas','NumPy','Scikit-learn','TensorFlow','Seaborn','Plotly','BeautifulSoup','Matplotlib','Streamlit']},
     { name: 'Databases', vals: ['MySQL', 'MongoDB', 'SQLite', 'JDBC'] },
     { name: 'Concepts', vals: ['OOP', 'DSA', 'SDLC', 'Agile', 'DBMS'] },
   ];
@@ -95,7 +95,7 @@ export default function App() {
     },
     {
       year: 'DSA Grind',
-      title: '70+ LeetCode problems' ,
+      title: '75+ LeetCode problems' ,
       desc: "Not a flashy number. But I show up. Even when the college exams hit and the streak breaks, I come back. That's the part I'm most consistent about."
     },
     {
@@ -358,20 +358,20 @@ export default function App() {
           <h2>Serious about growth.<br />Even when it's uncomfortable.</h2>
           <div className="about-text">
             <p>I'm not the person who has it all figured out. I'm the person who <strong>shows up anyway.</strong> For the 25-mark test, the late-night bug, the hackathon I'm not sure I'll do well in.</p>
-            <p>When I'm in a room, I want to be the person people <em>look to</em>. Not because I'm loud, but because I actually know my stuff. That standard drives me more than any deadline ever could.</p>
-            <p>Right now I'm a 4th semester CSE student at LJ University, Ahmedabad. <strong>CGPA 9.83 last semester</strong>, actively strengthening my DSA and ML foundations, and building things that are more than just submissions.</p>
+            <p>When I'm in a room, I want to be the person people <em>rely on</em>. Not because I have all the answers, but because I know how to find them. That standard drives me more than any deadline ever could.</p>
+            <p>Right now I'm a 4th semester CSE student at LJ University, Ahmedabad with<strong>CGPA 9.42</strong>. Actively strengthening my DSA and ML foundations, and building things that are more than just submissions.</p>
           </div>
           <div className="numbers-row fade">
             <div className="num-cell">
               <div className="num-big">9.83</div>
-              <div className="num-label">Sem 3 CGPA</div>
+              <div className="num-label">Sem 3 SPI</div>
             </div>
             <div className="num-cell">
-              <div className="num-big">70+</div>
+              <div className="num-big">75+</div>
               <div className="num-label">LeetCode</div>
             </div>
             <div className="num-cell">
-              <div className="num-big">600+</div>
+              <div className="num-big">650+</div>
               <div className="num-label">GitHub</div>
             </div>
             <div className="num-cell">
