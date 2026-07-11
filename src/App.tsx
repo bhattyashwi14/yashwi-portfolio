@@ -484,7 +484,7 @@ export default function App() {
           <div className="section-eyebrow">Let's Connect</div>
           <h2>Looking to contribute, learn,<br />and grow through meaningful internship opportunities.</h2>
           <div className="contact-text">
-            I'm not going to pretend I know everything. But I <strong>learn fast, take things seriously, and do the work.</strong> Even when it's hard, even when I'm scared I'll get it wrong. If that's the kind of energy your team needs, I'd love to talk.
+            I'm not going to pretend I know everything. But I <strong>learn fast, take ownership, and do the work.</strong> I ask questions, embrace difficult problems, and keep showing up until I figure things out. I don't mind stepping into unfamiliar territory or making mistakes, as long as I'm learning from them. I believe growth comes from curiosity, consistency, and the willingness to keep learning. Not from pretending to know it all. If that resonates with the kind of people you want on your team, I'd love to connect.
           </div>
           <div className="contact-grid">
             <a href="mailto:bhattyashwi@gmail.com" className="contact-item">bhattyashwi@gmail.com</a>
