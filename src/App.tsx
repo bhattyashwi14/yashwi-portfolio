@@ -359,7 +359,7 @@ export default function App() {
           <div className="about-text">
             <p>I'm not the person who has it all figured out. I'm the person who <strong>shows up anyway.</strong> For the 25-mark test, the late-night bug, the hackathon I'm not sure I'll do well in.</p>
             <p>When I'm in a room, I want to be the person people <em>rely on</em>. Not because I have all the answers, but because I know how to find them. That standard drives me more than any deadline ever could.</p>
-            <p>Right now I'm a 4th semester CSE student at LJ University, Ahmedabad with<strong>CGPA 9.42</strong>. Actively strengthening my DSA and ML foundations, and building things that are more than just submissions.</p>
+            <p>Right now I'm a 4th semester CSE student at LJ University, Ahmedabad with <strong>CGPA 9.42</strong>. Actively strengthening my DSA and ML foundations, and building things that are more than just submissions.</p>
           </div>
           <div className="numbers-row fade">
             <div className="num-cell">
