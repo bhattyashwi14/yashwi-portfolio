@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect} from "react";
 
 const styles = `
   @import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@300;400;500;600;700;800;900&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap');
@@ -323,8 +323,6 @@ const styles = `
 `;
 
 const YashwiPortfolio: React.FC = () => {
-  const observerRef = useRef<IntersectionObserver | null>(null);
-
   useEffect(() => {
   const styleEl = document.createElement("style");
   styleEl.textContent = styles;
