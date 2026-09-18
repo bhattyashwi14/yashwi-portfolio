@@ -319,7 +319,226 @@ const styles = `
   .activity-row { display: flex; flex-direction: column; gap: 0.7rem; margin-top: 0.5rem; }
   .activity-item { display: flex; justify-content: space-between; align-items: center; padding: 0.7rem 1rem; background: rgba(255,255,255,0.04); border-radius: 10px; border: 1px solid var(--border); }
   .activity-item span:first-child { font-size: 0.78rem; color: var(--ink2); }
-  .activity-val { font-size: 1rem; font-weight: 700; background: linear-gradient(135deg, var(--pink), var(--lav)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .activity-val { 
+    font-size: 1rem; 
+    font-weight: 700; 
+    background: linear-gradient(135deg, var(--pink), var(--lav)); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+  }
+
+
+  /* =========================
+     MOBILE RESPONSIVE
+     ========================= */
+
+  @media (max-width: 768px) {
+
+    html, body {
+      overflow-x: hidden;
+      width: 100%;
+    }
+
+    body {
+      font-size: 15px;
+    }
+
+    main {
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    nav {
+      padding: 0 1rem;
+      height: 64px;
+    }
+
+    .logo {
+      font-size: 1.25rem;
+    }
+
+    .nav-links {
+      display: none;
+    }
+
+    .nav-pill {
+      font-size: 0.68rem;
+      padding: 0.45rem 0.7rem;
+      white-space: nowrap;
+    }
+
+    .hero {
+      min-height: auto;
+      padding: 5rem 1.25rem 4rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hero-left {
+      width: 100%;
+    }
+
+    .hero-chip {
+      font-size: 0.68rem;
+      max-width: 100%;
+      line-height: 1.5;
+    }
+
+    h1 {
+      font-size: clamp(2.7rem, 13vw, 4rem);
+      line-height: 0.98;
+      letter-spacing: -0.055em;
+      word-break: normal;
+    }
+
+    .hero-sub {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .hero-sub p {
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .section {
+      padding: 4rem 1.25rem;
+    }
+
+    .sec-label {
+      font-size: 0.68rem;
+    }
+
+    .sec-h2 {
+      font-size: clamp(2rem, 9vw, 3rem);
+      line-height: 1.05;
+      letter-spacing: -0.045em;
+    }
+
+    /* ABOUT */
+
+    .about-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    /* EXPERIENCE */
+
+    .exp-grid {
+      grid-template-columns: 1fr;
+    }
+
+    /* SKILLS */
+
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+
+    /* PROJECTS */
+
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .project-card {
+      width: 100%;
+    }
+
+    /* HACKATHONS */
+
+    .hack-grid {
+      grid-template-columns: 1fr;
+    }
+
+    /* CERTIFICATIONS */
+
+    .cert-grid {
+      grid-template-columns: 1fr;
+    }
+
+    /* JOURNEY */
+
+    .timeline {
+      padding-left: 1.25rem;
+    }
+
+    .tl-item {
+      padding-left: 1.25rem;
+    }
+
+    .tl-item h3 {
+      font-size: 1.15rem;
+      line-height: 1.35;
+    }
+
+    .tl-item p {
+      font-size: 0.9rem;
+      line-height: 1.65;
+    }
+
+    /* CONTACT */
+
+    .contact-glass {
+      padding: 2rem 1.25rem;
+    }
+
+    .contact-h {
+      font-size: clamp(2rem, 8vw, 3rem);
+      line-height: 1.08;
+    }
+
+    .contact-body {
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+
+    .c-links {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .c-link {
+      width: 100%;
+      text-align: center;
+    }
+
+  }
+
+
+  @media (max-width: 480px) {
+
+    nav {
+      padding: 0 0.85rem;
+    }
+
+    .nav-pill {
+      font-size: 0.6rem;
+      padding: 0.4rem 0.55rem;
+    }
+
+    .hero {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    h1 {
+      font-size: clamp(2.45rem, 14vw, 3.4rem);
+    }
+
+    .section {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .sec-h2 {
+      font-size: clamp(1.9rem, 9vw, 2.6rem);
+    }
+
+    .contact-glass {
+      padding: 1.5rem 1rem;
+    }
+
+  }
 `;
 
 const YashwiPortfolio: React.FC = () => {
