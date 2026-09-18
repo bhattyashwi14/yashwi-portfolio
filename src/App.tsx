@@ -326,21 +326,179 @@ const styles = `
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
   }
+  }
 
-
-  /* =========================
-     MOBILE RESPONSIVE
+    /* =========================
+     RESPONSIVE DESIGN
      ========================= */
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
 
-    html, body {
-      overflow-x: hidden;
+    /* ---------- NAV ---------- */
+
+    nav {
+      padding: 0.9rem 1.5rem;
+      gap: 1rem;
+    }
+
+    .nav-links {
+      gap: 1.2rem;
+    }
+
+    .nav-links a {
+      font-size: 0.65rem;
+    }
+
+    .nav-pill {
+      font-size: 0.58rem;
+      padding: 4px 8px;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .hero {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      padding: 5rem 2rem 4rem;
+      min-height: auto;
+    }
+
+    .hero-left {
       width: 100%;
     }
 
+    .hero-right {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-size: clamp(3rem, 8vw, 4.5rem);
+    }
+
+
+    /* ---------- SECTIONS ---------- */
+
+    .section {
+      padding: 4.5rem 2rem;
+    }
+
+    .section-divider {
+      margin: 0 2rem;
+    }
+
+
+    /* ---------- ABOUT ---------- */
+
+    .about-bento {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+
+    .bento-tall {
+      grid-row: auto;
+    }
+
+
+    /* ---------- EXPERIENCE ---------- */
+
+    .exp-glass {
+      padding: 2rem;
+    }
+
+    .exp-body {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+
+    /* ---------- SKILLS ---------- */
+
+    .sk-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sk-cell:nth-child(3n) {
+      border-right: 1px solid var(--border);
+    }
+
+    .sk-cell:nth-child(2n) {
+      border-right: none;
+    }
+
+    .sk-cell:nth-last-child(-n+3) {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .sk-cell:nth-last-child(-n+2) {
+      border-bottom: none;
+    }
+
+
+    /* ---------- PROJECTS ---------- */
+
+    .feat-bento {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .other-bento {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .proj-screens {
+      grid-template-columns: 1fr;
+    }
+
+    .screen:not(:last-child) {
+      border-right: none;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .proj-body {
+      padding: 1.7rem;
+    }
+
+
+    /* ---------- EVENTS ---------- */
+
+    .event-bento {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* ---------- CERTIFICATIONS ---------- */
+
+    .cert-bento {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* ---------- CONTACT ---------- */
+
+    .contact-glass {
+      padding: 3rem 2rem;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    footer {
+      padding: 2rem;
+    }
+
+  }
+
+
+  @media (max-width: 600px) {
+
+    /* ---------- GLOBAL ---------- */
+
+    html,
     body {
-      font-size: 15px;
+      width: 100%;
+      overflow-x: hidden;
     }
 
     main {
@@ -348,194 +506,445 @@ const styles = `
       overflow-x: hidden;
     }
 
+
+    /* ---------- NAV ---------- */
+
     nav {
-      padding: 0 1rem;
-      height: 64px;
+      padding: 0.85rem 1rem;
+      gap: 0.8rem;
     }
 
     .logo {
-      font-size: 1.25rem;
+      flex-shrink: 0;
+      font-size: 0.95rem;
     }
 
     .nav-links {
+      display: flex;
+      flex: 1;
+      min-width: 0;
+      gap: 1rem;
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+      scrollbar-width: none;
+    }
+
+    .nav-links::-webkit-scrollbar {
       display: none;
     }
 
-    .nav-pill {
-      font-size: 0.68rem;
-      padding: 0.45rem 0.7rem;
-      white-space: nowrap;
+    .nav-links li {
+      flex-shrink: 0;
     }
+
+    .nav-links a {
+      font-size: 0.62rem;
+    }
+
+    .nav-pill {
+      display: none;
+    }
+
+
+    /* ---------- HERO ---------- */
 
     .hero {
-      min-height: auto;
-      padding: 5rem 1.25rem 4rem;
       display: flex;
       flex-direction: column;
-    }
-
-    .hero-left {
+      gap: 2.5rem;
+      padding: 5rem 1rem 3.5rem;
       width: 100%;
     }
 
     .hero-chip {
-      font-size: 0.68rem;
       max-width: 100%;
+      font-size: 0.6rem;
+      padding: 5px 10px;
       line-height: 1.5;
     }
 
-    h1 {
-      font-size: clamp(2.7rem, 13vw, 4rem);
-      line-height: 0.98;
+    .hero h1 {
+      font-size: clamp(2.65rem, 13vw, 4rem);
+      line-height: 1;
       letter-spacing: -0.055em;
-      word-break: normal;
+      margin-bottom: 1.5rem;
     }
 
     .hero-sub {
-      width: 100%;
       max-width: 100%;
+      font-size: 0.92rem;
+      line-height: 1.75;
     }
 
     .hero-sub p {
-      font-size: 0.95rem;
-      line-height: 1.7;
+      margin-bottom: 0.75rem;
     }
 
+    .quote-pill {
+      max-width: 100%;
+      font-size: 0.8rem;
+      padding: 0.85rem 1rem;
+      margin-bottom: 1.8rem;
+    }
+
+    .hero-btns {
+      gap: 0.7rem;
+    }
+
+    .btn-pri,
+    .btn-sec {
+      padding: 0.7rem 1.25rem;
+      font-size: 0.82rem;
+    }
+
+    .hero-right {
+      width: 100%;
+      max-width: none;
+    }
+
+    .hero-stat-card {
+      padding: 1.2rem 1.3rem;
+    }
+
+    .stat-row {
+      gap: 0.7rem;
+    }
+
+    .stat-mini {
+      padding: 0.9rem;
+    }
+
+    .stat-n {
+      font-size: 2rem;
+    }
+
+    .stat-mini .stat-n {
+      font-size: 1.45rem;
+    }
+
+
+    /* ---------- SECTIONS ---------- */
+
     .section {
-      padding: 4rem 1.25rem;
+      width: 100%;
+      padding: 3.5rem 1rem;
+    }
+
+    .section-divider {
+      margin: 0 1rem;
     }
 
     .sec-label {
-      font-size: 0.68rem;
+      font-size: 0.6rem;
     }
 
     .sec-h2 {
-      font-size: clamp(2rem, 9vw, 3rem);
-      line-height: 1.05;
+      font-size: clamp(2rem, 9vw, 2.8rem);
+      line-height: 1.08;
       letter-spacing: -0.045em;
     }
 
-    /* ABOUT */
 
-    .about-grid {
-      grid-template-columns: 1fr;
-      gap: 2rem;
+    /* ---------- ABOUT ---------- */
+
+    .about-bento {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 2rem !important;
     }
 
-    /* EXPERIENCE */
+    .bento-card {
+      width: 100%;
+      padding: 1.4rem;
+      border-radius: 17px;
+    }
 
-    .exp-grid {
+    .bento-card h3 {
+      font-size: 1.15rem;
+    }
+
+    .bento-card p {
+      font-size: 0.88rem;
+      line-height: 1.7;
+    }
+
+    .academia-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+
+    /* ---------- EXPERIENCE ---------- */
+
+    .exp-glass {
+      width: 100%;
+      padding: 1.4rem;
+      border-radius: 18px;
+    }
+
+    .exp-title {
+      font-size: 1.25rem;
+    }
+
+    .exp-body {
+      display: flex;
+      flex-direction: column;
+      gap: 1.7rem;
+    }
+
+    .exp-text {
+      font-size: 0.87rem;
+      line-height: 1.75;
+    }
+
+    .exp-badge {
+      font-size: 0.56rem;
+      padding: 4px 8px;
+    }
+
+
+    /* ---------- SKILLS ---------- */
+
+    .skills-glass {
+      width: 100%;
+      border-radius: 18px;
+    }
+
+    .sk-topbar {
+      padding: 0.85rem 1rem;
+    }
+
+    .sk-topbar span {
+      font-size: 0.58rem;
+    }
+
+    .sk-grid {
+      display: grid;
       grid-template-columns: 1fr;
     }
 
-    /* SKILLS */
-
-    .skills-grid {
-      grid-template-columns: 1fr;
+    .sk-cell,
+    .sk-cell:nth-child(2n),
+    .sk-cell:nth-child(3n) {
+      border-right: none;
+      border-bottom: 1px solid var(--border);
     }
 
-    /* PROJECTS */
-
-    .projects-grid {
-      grid-template-columns: 1fr;
+    .sk-cell:last-child {
+      border-bottom: none;
     }
 
-    .project-card {
+    .sk-cell:nth-last-child(-n+2) {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .sk-cell:last-child {
+      border-bottom: none;
+    }
+
+    .sk-cell {
+      padding: 1.2rem 1rem;
+    }
+
+
+    /* ---------- FEATURED PROJECTS ---------- */
+
+    .feat-bento {
+      grid-template-columns: 1fr;
+      gap: 0.8rem;
+    }
+
+    .fcard {
       width: 100%;
     }
 
-    /* HACKATHONS */
+    .fcard-visual {
+      height: 100px;
+    }
 
-    .hack-grid {
+
+    /* ---------- PROJECT DETAIL ---------- */
+
+    .proj-card {
+      border-radius: 18px;
+      margin-bottom: 1.2rem;
+    }
+
+    .proj-screens {
       grid-template-columns: 1fr;
     }
 
-    /* CERTIFICATIONS */
-
-    .cert-grid {
-      grid-template-columns: 1fr;
+    .screen {
+      height: 180px;
     }
 
-    /* JOURNEY */
+    .proj-body {
+      padding: 1.35rem;
+    }
 
-    .timeline {
-      padding-left: 1.25rem;
+    .proj-hdr {
+      flex-direction: column;
+      gap: 0.7rem;
+    }
+
+    .proj-hdr h3 {
+      font-size: 1.15rem;
+    }
+
+    .proj-gh {
+      align-self: flex-start;
+    }
+
+    .proj-story {
+      font-size: 0.87rem;
+      line-height: 1.75;
+    }
+
+
+    /* ---------- OTHER PROJECTS ---------- */
+
+    .other-bento {
+      grid-template-columns: 1fr;
+      gap: 0.8rem;
+    }
+
+    .mini-card {
+      width: 100%;
+    }
+
+
+    /* ---------- EVENTS ---------- */
+
+    .event-bento {
+      grid-template-columns: 1fr;
+      gap: 0.8rem;
+    }
+
+    .ev-card {
+      width: 100%;
+    }
+
+
+    /* ---------- CERTIFICATIONS ---------- */
+
+    .cert-bento {
+      grid-template-columns: 1fr;
+      gap: 0.8rem;
+    }
+
+    .cert-card {
+      width: 100%;
+    }
+
+
+    /* ---------- TIMELINE ---------- */
+
+    .tl-wrap {
+      padding-left: 1.8rem;
+    }
+
+    .tl-line {
+      left: 0;
+    }
+
+    .tl-dot {
+      left: -1.8rem;
     }
 
     .tl-item {
-      padding-left: 1.25rem;
+      padding-bottom: 2rem;
     }
 
     .tl-item h3 {
-      font-size: 1.15rem;
-      line-height: 1.35;
+      font-size: 0.95rem;
     }
 
     .tl-item p {
-      font-size: 0.9rem;
+      font-size: 0.82rem;
       line-height: 1.65;
     }
 
-    /* CONTACT */
+
+    /* ---------- CONTACT ---------- */
 
     .contact-glass {
-      padding: 2rem 1.25rem;
+      width: 100%;
+      padding: 2rem 1.1rem;
+      border-radius: 20px;
     }
 
     .contact-h {
-      font-size: clamp(2rem, 8vw, 3rem);
-      line-height: 1.08;
+      font-size: clamp(1.8rem, 8.5vw, 2.7rem);
+      line-height: 1.1;
     }
 
     .contact-body {
-      font-size: 0.9rem;
+      font-size: 0.86rem;
       line-height: 1.7;
+      margin: 1.2rem auto 2rem;
     }
 
     .c-links {
       flex-direction: column;
-      align-items: stretch;
+      width: 100%;
+      gap: 0.6rem;
     }
 
     .c-link {
       width: 100%;
+      justify-content: center;
+      font-size: 0.7rem;
+      padding: 0.65rem 0.8rem;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    footer {
+      padding: 1.5rem 1rem;
+      flex-direction: column;
+      gap: 0.6rem;
       text-align: center;
+    }
+
+    footer p {
+      font-size: 0.6rem;
     }
 
   }
 
 
-  @media (max-width: 480px) {
+  @media (max-width: 380px) {
 
-    nav {
-      padding: 0 0.85rem;
+    .hero h1 {
+      font-size: 2.45rem;
     }
 
-    .nav-pill {
-      font-size: 0.6rem;
-      padding: 0.4rem 0.55rem;
-    }
-
-    .hero {
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-
-    h1 {
-      font-size: clamp(2.45rem, 14vw, 3.4rem);
-    }
-
-    .section {
-      padding-left: 1rem;
-      padding-right: 1rem;
+    .hero-chip {
+      font-size: 0.55rem;
     }
 
     .sec-h2 {
-      font-size: clamp(1.9rem, 9vw, 2.6rem);
+      font-size: 1.9rem;
     }
 
-    .contact-glass {
-      padding: 1.5rem 1rem;
+    .hero-btns {
+      flex-direction: column;
+    }
+
+    .btn-pri,
+    .btn-sec {
+      width: 100%;
+      text-align: center;
+    }
+
+    .nav-links {
+      gap: 0.8rem;
+    }
+
+    .nav-links a {
+      font-size: 0.58rem;
     }
 
   }
