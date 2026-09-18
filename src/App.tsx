@@ -1028,7 +1028,7 @@ const YashwiPortfolio: React.FC = () => {
                 <span className="grad">So I figure it<br />out myself.</span>
               </h1>
               <div className="hero-sub reveal d2">
-                <p>I&apos;m Yashwi a second year, fourth semester student and I&apos;m, <strong>dead serious about where I&apos;m going.</strong></p>
+                <p>I&apos;m Yashwi a second year, fifth semester student and I&apos;m, <strong>dead serious about where I&apos;m going.</strong></p>
                 <p>I panic. I overthink. I question everything. And then I open my laptop and get to work anyway because waiting until I feel ready has never been an option I gave myself.</p>
                 <p>I&apos;m building my foundations in <strong>DSA, Machine Learning, and Backend Development.</strong> Not because someone told me to, but because I want to be the person people come to when they&apos;re stuck and rely on me for technical doubts and problem solving.</p>
               </div>
