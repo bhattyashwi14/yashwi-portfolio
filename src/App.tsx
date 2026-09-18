@@ -543,8 +543,12 @@ const styles = `
     }
 
     .nav-pill {
-      display: none;
-    }
+  display: inline-flex;
+  flex-shrink: 0;
+  font-size: 0.55rem;
+  padding: 4px 7px;
+  white-space: nowrap;
+}
 
 
     /* ---------- HERO ---------- */
@@ -1391,7 +1395,7 @@ const YashwiPortfolio: React.FC = () => {
                 </div>
               </div>
               <div className="proj-body">
-                <div className="proj-hdr"><h3>Reflecto — Console-Based Productivity System</h3></div>
+                <div className="proj-hdr"><h3>Reflecto — Console-Based Productivity System</h3><a href="https://github.com/bhattyashwi14/reflecto" target="_blank" rel="noreferrer" className="proj-gh">GitHub ↗</a></div>
                 <div className="proj-role">Java · MySQL · JDBC · Semester 2</div>
                 <div className="proj-story">
                   <p>The project I&apos;m most proud of — and the most honest one here. <strong>Built entirely on my own, without AI tools, without anyone giving me the answer.</strong> When it broke — and it broke constantly — the only way out was through.</p>
